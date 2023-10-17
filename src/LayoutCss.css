@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+/* '#3A3A3A'
+          dark: #1F1F1F
+     
+          light: '#757575'
+          dark: '#424242' */
+
+.container {
+  border: 1px solid rgb(241, 194, 63);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns with equal width */
+  grid-template-rows: auto auto; /* 2 rows with auto height */
+  gap: 20px; /* Adjust the gap as needed */
+  border-radius: 1.3rem;
+  overflow-x: hidden;
+}
+
+.Task-container {
+  grid-column: 1 / span 2; /* Span both columns in the first row */
+
+  text-align: center;
+
+  background-color: #333; /* Background color for the navbar */
+  color: #fff; /* Text color for the navbar */
+  padding: 10px;
+  grid-row: 1; /* Place it in the first row of the grid */
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.List-container,
+.status {
+  background-color: #e0e0e0;
+  padding: 5px;
+
+  height: 70vh;
+}
+
+.Task-container label,
+input {
+  color: #a8dee6;
+}
+
+.List-container ul li {
+  color: #00bddaf1;
+  font-weight: 700;
+
+  list-style: none;
+}
+.status {
+  color: #00bddaf1;
+}

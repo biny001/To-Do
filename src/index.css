@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Raleway:wght@100;300&family=Signika+Negative:wght@300;400;500;600&display=swap");
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Signika Negative', sans-serif; */
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 
+ colors: #FFE5E5
+ #
+ 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 62.5%;
+}
+
+.main {
+  height: 80vh;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ebd9d9;
+  transform: translate(-50%, 10%);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-form input {
+  width: 100%;
+  margin-right: 8px;
+  height: 2rem;
+}
+
+.todo-form button {
+  background-color: rgba(155, 50, 253, 0.767);
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.to-do .add {
+  margin-left: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.list-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.list-item button {
+  margin-left: 10px;
+}
+
+.delete {
+  height: 1rem;
+  width: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid;
+  border: 3px;
+}
